@@ -1,0 +1,17 @@
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\bin\Debug\net8.0\WebSockets testing.exe
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\bin\Debug\net8.0\WebSockets testing.deps.json
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\bin\Debug\net8.0\WebSockets testing.runtimeconfig.json
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\bin\Debug\net8.0\WebSockets testing.dll
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\bin\Debug\net8.0\WebSockets testing.pdb
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\bin\Debug\net8.0\websocket-sharp.dll
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.csproj.AssemblyReference.cache
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.AssemblyInfoInputs.cache
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.AssemblyInfo.cs
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.csproj.CoreCompileInputs.cache
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSocke.2452D1D6.Up2Date
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.dll
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\refint\WebSockets testing.dll
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.pdb
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.genruntimeconfig.cache
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\ref\WebSockets testing.dll
