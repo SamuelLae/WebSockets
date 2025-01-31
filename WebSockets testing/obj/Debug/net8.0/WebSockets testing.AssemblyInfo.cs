@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebSockets testing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb1f6917dad2889d232e944761999e311ef25845")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebSockets testing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebSockets testing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

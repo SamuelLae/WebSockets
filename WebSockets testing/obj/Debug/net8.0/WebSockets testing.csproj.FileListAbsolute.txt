@@ -15,3 +15,4 @@ C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug
 C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.pdb
 C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.genruntimeconfig.cache
 C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\ref\WebSockets testing.dll
+C:\Users\sl8342\OneDrive\Programering\c#\WebSockets\WebSockets testing\obj\Debug\net8.0\WebSockets testing.sourcelink.json
