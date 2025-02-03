@@ -12,7 +12,7 @@ class Program{
 
     byte[] res = new byte[1024];
 
-    Uri server = new Uri("ws://echo.websocket.org/");
+    Uri server = new Uri("https://echo.websocket.org/");
     ClientWebSocket ws = new ClientWebSocket();
 
     await ws.ConnectAsync(server, default);
