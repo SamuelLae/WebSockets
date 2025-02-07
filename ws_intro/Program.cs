@@ -47,14 +47,13 @@ class WebSocketClient
     }
     public static async Task Main()
     {
-        Console.Clear();
         string serverUri = "wss://echo.websocket.org";
         ClientWebSocket client = new ClientWebSocket();
         await client.ConnectAsync(new Uri(serverUri), CancellationToken.None);
         byte[] receiveBuffer = new byte[1024];
 
         bool ServerRead = false;
-
+        Console.Clear();
         while (client.State == WebSocketState.Open)
         {
             WebSocketReceiveResult result = await client.ReceiveAsync(new ArraySegment<byte>(receiveBuffer), CancellationToken.None);
