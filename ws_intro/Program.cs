@@ -29,7 +29,8 @@ class WebSocketClient
 
         
         using (StreamWriter w = File.AppendText("chat.log")){
-            Console.WriteLine(msg, user, w);
+            log(msg, user, w);
+            Console.WriteLine($"| {DateTime.Now.ToLongTimeString()} | {user} | {msg} |");
         }
     }
     static void log(string msg,string user,StreamWriter w){
