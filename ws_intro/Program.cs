@@ -35,7 +35,7 @@ class WebSocketClient
     static void log(string msg,string user,StreamWriter w){
         // Funktionen ska skriva: <nuvarande klockslag> <user> | <msg> till en logfil som definieras av w.
         // Se exempel i filen log.example
-        w.Write($"| {DateTime.Now.ToLongTimeString()} | {user} | {msg} |");
+        w.WriteLine($"| {DateTime.Now.ToLongTimeString()} | {user} | {msg} |");
     }
     static async Task Send(ClientWebSocket client){
         Console.WriteLine("Skriv in ett meddelande att skicka:");
