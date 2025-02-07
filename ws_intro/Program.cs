@@ -47,20 +47,26 @@ class WebSocketClient
     }
     public static async Task Main()
     {
+        Console.Clear();
         string serverUri = "wss://echo.websocket.org";
         ClientWebSocket client = new ClientWebSocket();
         await client.ConnectAsync(new Uri(serverUri), CancellationToken.None);
         byte[] receiveBuffer = new byte[1024];
+
+        bool ServerRead = false;
+
         while (client.State == WebSocketState.Open)
         {
             WebSocketReceiveResult result = await client.ReceiveAsync(new ArraySegment<byte>(receiveBuffer), CancellationToken.None);
-           
-            if (result.MessageType == WebSocketMessageType.Text)
+
+            
+            if (result.MessageType == WebSocketMessageType.Text && ServerRead)
             {
                 string receivedMessage = Encoding.UTF8.GetString(receiveBuffer, 0, result.Count);
                 handleMessage(receivedMessage, "Echo");
                 await Send(client);
             }
+            ServerRead = true;
         }
     }
 }
