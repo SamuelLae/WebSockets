@@ -60,9 +60,6 @@ class WebSocketClient
                 handleMessage(receivedMessage, "Echo");
                 await Send(client);
             }
-
-             Console.ReadKey();
-            Console.Clear();
         }
     }
 }
