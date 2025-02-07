@@ -12,3 +12,18 @@ C:\Users\jn5223\OneDrive - LYSTKOM\kurser\prg2\Nätverksprogrammering\Websocket\
 C:\Users\jn5223\OneDrive - LYSTKOM\kurser\prg2\Nätverksprogrammering\Websocket\ws_intro\obj\Debug\net8.0\ws_intro.pdb
 C:\Users\jn5223\OneDrive - LYSTKOM\kurser\prg2\Nätverksprogrammering\Websocket\ws_intro\obj\Debug\net8.0\ws_intro.genruntimeconfig.cache
 C:\Users\jn5223\OneDrive - LYSTKOM\kurser\prg2\Nätverksprogrammering\Websocket\ws_intro\obj\Debug\net8.0\ref\ws_intro.dll
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\bin\Debug\net8.0\ws_intro.exe
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\bin\Debug\net8.0\ws_intro.deps.json
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\bin\Debug\net8.0\ws_intro.runtimeconfig.json
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\bin\Debug\net8.0\ws_intro.dll
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\bin\Debug\net8.0\ws_intro.pdb
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\obj\Debug\net8.0\ws_intro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\obj\Debug\net8.0\ws_intro.AssemblyInfoInputs.cache
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\obj\Debug\net8.0\ws_intro.AssemblyInfo.cs
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\obj\Debug\net8.0\ws_intro.csproj.CoreCompileInputs.cache
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\obj\Debug\net8.0\ws_intro.sourcelink.json
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\obj\Debug\net8.0\ws_intro.dll
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\obj\Debug\net8.0\refint\ws_intro.dll
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\obj\Debug\net8.0\ws_intro.pdb
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\obj\Debug\net8.0\ws_intro.genruntimeconfig.cache
+C:\Users\sl8342\OneDrive\Programering\c#\Websocket\ws_intro\obj\Debug\net8.0\ref\ws_intro.dll
