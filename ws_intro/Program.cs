@@ -29,7 +29,7 @@ class WebSocketClient
 
         
         using (StreamWriter w = File.AppendText("chat.log")){
-            log(msg, user, w);
+            Console.WriteLine(msg, user, w);
         }
     }
     static void log(string msg,string user,StreamWriter w){
