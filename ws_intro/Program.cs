@@ -53,6 +53,7 @@ class WebSocketClient
         while (client.State == WebSocketState.Open)
         {
             WebSocketReceiveResult result = await client.ReceiveAsync(new ArraySegment<byte>(receiveBuffer), CancellationToken.None);
+            Console.ReadKey();
             Console.Clear();
             if (result.MessageType == WebSocketMessageType.Text)
             {
