@@ -52,8 +52,7 @@ class WebSocketClient
         await client.ConnectAsync(new Uri(serverUri), CancellationToken.None);
         byte[] receiveBuffer = new byte[1024];
 
-         await client.ReceiveAsync(new ArraySegment<byte>(receiveBuffer), CancellationToken.None);
-
+    
         Console.Clear();
         while (client.State == WebSocketState.Open)
         {
