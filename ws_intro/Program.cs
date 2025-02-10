@@ -52,20 +52,20 @@ class WebSocketClient
         await client.ConnectAsync(new Uri(serverUri), CancellationToken.None);
         byte[] receiveBuffer = new byte[1024];
 
-        bool ServerRead = false;
+         await client.ReceiveAsync(new ArraySegment<byte>(receiveBuffer), CancellationToken.None);
+
         Console.Clear();
         while (client.State == WebSocketState.Open)
         {
             WebSocketReceiveResult result = await client.ReceiveAsync(new ArraySegment<byte>(receiveBuffer), CancellationToken.None);
 
             
-            if ((result.MessageType == WebSocketMessageType.Text) && ServerRead)
+            if (result.MessageType == WebSocketMessageType.Text)
             {
                 string receivedMessage = Encoding.UTF8.GetString(receiveBuffer, 0, result.Count);
                 handleMessage(receivedMessage, "Echo");
                 await Send(client);
             }
-            ServerRead = true;
         }
     }
 }
