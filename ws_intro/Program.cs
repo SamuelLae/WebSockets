@@ -1,38 +1,19 @@
 ﻿using System.Net.WebSockets;
 using System.Text;
-using Microsoft.VisualBasic;
 
-/* Källor:
-1. https://learn.microsoft.com/en-us/dotnet/standard/io/how-to-open-and-append-to-a-log-file
-2. https://learn.microsoft.com/en-us/dotnet/standard/io/how-to-write-text-to-a-file
-3. https://learn.microsoft.com/en-us/dotnet/fundamentals/runtime-libraries/system-datetime#assign-a-computed-value
-*/
 
-/* Att Göra
-
-    user = <ditt namn> när du skickar meddelande
-    user = echo när du tar emot meddelande från echo-servern
-    logfilens namn ska vara chat.log
-
-    * Implementera funktionen log
-    * Implementera handleMessage (båda funktions-kroppen och -huvud)
-        - Skriver ut det mottagna meddelandet till konsolen.
-        - Anropar log-funktionen med lämplig parametrar.
-    * Modifiera Main
-        - Anropa handleMessage i samband med att meddelande skickats och tas emot.
-    
-*/
 class WebSocketClient
 {
-    static void handleMessage(string msg, string user){
-        // funktionen saknar både funktionskropp och funktionshuvud (dvs nödvändiga parametrar)
+    static void handleMessage(string msg, string user, bool write){
 
-        
+
+        if (write){
         using (StreamWriter w = File.AppendText("chat.log")){
             log(msg, user, w);
             Console.WriteLine($"| {DateTime.Now.ToLongTimeString()} | {user} | {msg} |");
         }
     }
+}
     static void log(string msg,string user,StreamWriter w){
         // Funktionen ska skriva: <nuvarande klockslag> <user> | <msg> till en logfil som definieras av w.
         // Se exempel i filen log.example
@@ -41,7 +22,7 @@ class WebSocketClient
     static async Task Send(ClientWebSocket client){
         Console.WriteLine("Skriv in ett meddelande att skicka:");
         string message = Console.ReadLine();
-        handleMessage(message, "Samuel");
+        handleMessage(message, "Samuel", true);
         byte[] buffer = Encoding.UTF8.GetBytes(message);
         await client.SendAsync(new ArraySegment<byte>(buffer), WebSocketMessageType.Text, true, CancellationToken.None);
     }
@@ -52,7 +33,8 @@ class WebSocketClient
         await client.ConnectAsync(new Uri(serverUri), CancellationToken.None);
         byte[] receiveBuffer = new byte[1024];
 
-    
+
+        bool ServerMessage = false;
         Console.Clear();
         while (client.State == WebSocketState.Open)
         {
@@ -62,8 +44,9 @@ class WebSocketClient
             if (result.MessageType == WebSocketMessageType.Text)
             {
                 string receivedMessage = Encoding.UTF8.GetString(receiveBuffer, 0, result.Count);
-                handleMessage(receivedMessage, "Echo");
+                handleMessage(receivedMessage, "Echo", ServerMessage);
                 await Send(client);
+                ServerMessage = true;
             }
         }
     }
